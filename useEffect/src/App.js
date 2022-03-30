@@ -5,6 +5,10 @@ function App() {
   const [count, setCount] = useState(0);
   let num = 0
 
+  useEffect(() => {
+    console.log('entrou no useEffect')
+  }, [count, num])
+
   return (
     <Fragment>
       <h1>State: {count}</h1>
